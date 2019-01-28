@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    padding-top: 68px;
+}
+footer{
+    background-color:#0277bd;
+    color: #fff;
+    height: 100px;
+    opacity: .9;
+}
+a{
+    cursor: default;
+}
+.navbar ul{
+    list-style-type: none;
+    display: inline;
+}
+.navbar ul li{ 
+    padding-left:20px;
+    padding-right:20px;
+    float: right;
+    text-align: center;
+    line-height:4.2;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+.navbar ul li:hover{
+    background-color: #004c8c;     
+}
+.navbar ul li a{
+    text-decoration:none;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;    
+}
+.navbar{
+    background-color:#0277bd;
+    height: 68px;
+    padding:0px 15px 0px 15px;
+    z-index: 1;
+    position:fixed;
+    width:100%;
+    opacity: 0.90;
+}
+.navbar #logo{
+    margin-left:20px;
+    line-height:2;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;    
+}
+.navbar #logo-link{
+    text-decoration: none;
+}
+.navbar #logo-link:hover{
+    font-size: 1.05rem;    
+}
+.navbar #logo{
+    font-family: 'Lobster', cursive;
+    color:#fff;
+    display: inline;
+    font-size: 2em;        
+}
+.container{
+    width:100%;
+    margin: auto;
+    background-color:whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-flow: column;
+    line-height: 2;
+    padding: 85px;
+    color: #00000078;
+}
+.container img{
+    flex-direction: column;
+}
+.container h1{
+    text-align: center;
+    flex-direction: column;
+}
+#resume{
+    background-color: #fff !important;
+}
+#profile-img{
+    width: 100%;
+    opacity: 0.85;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;   
+}
+.stack img{
+    flex: 1; 
+    margin:100px 15px 100px 15px;
+    opacity: 0.8;
+    height:100%;
+    vertical-align: middle;
+}
+.stack img:hover{
+    opacity: 1;
+}
+.social-links{
+    float: right;
+    line-height:3;
+    font-size: 2rem;
+    margin-right:20px;
+}
+.social-links i{
+    padding: 5px;
+    margin-right: 10px
+}
+.avatar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+.footer{
+    line-height: 2;
+}
+
+/* Image Zoom */
+.parent {
+    width: 100%; 
+    height: 700px;
+    overflow: hidden;
+  }
+.child {
+    width: 100%;
+    height: 100%;
+    background-color: black; /* fallback color */
+    background-image: url("images/profile.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+}
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+.child::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .parent:hover .child:before,
+  .parent:focus .child:before {
+    display: block;
+  }
+
+.parent:hover span,
+.parent:focus span {
+  display: block;
+}
+
