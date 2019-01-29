@@ -4,13 +4,17 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 main{
     padding-top: 68px;
 }
 footer{
     background-color:#0277bd;
     color: #fff;
-    height: 100px;
+    height: 150px;
     opacity: .9;
 }
 a{
@@ -83,7 +87,7 @@ a{
     align-content: flex-start;
     flex-flow: column;
     line-height: 2;
-    padding: 85px;
+    padding: 50px;
     color: #00000078;
 }
 .container img{
@@ -92,39 +96,43 @@ a{
 .container h1{
     text-align: center;
     flex-direction: column;
-    margin-bottom:100px;
+    margin-bottom:45px;
 }
 #resume{
     background-color: #fff !important;
+    padding:50px;
 }
 #tech{
     background-color:whitesmoke;
 }
-#profile-img{
+.profile-image{
     width: 100%;
     opacity: 0.85;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    /* ...and now for the proper property */
-    transition:.5s;   
 }
 .stack img{
     flex: 1; 
     margin-right:20px;
     margin-bottom:50px;
     opacity: 0.7;
-    height:100%;
+    width:300px;
     vertical-align: middle;
 }
 .stack img:hover{
     opacity: 1;
 }
+.footer{
+    line-height:2;
+}
+.footer-contact{
+    float:left;
+    margin:20px;
+}
+.footer-contact p{
+    text-align:center;
+}
 .social-links{
     float: right;
-    line-height:3;
+    line-height:4.5;
     font-size: 2rem;
     margin-right:20px;
 }
@@ -144,50 +152,49 @@ a{
     margin-left: auto;
     margin-right: auto;
     width: 150px;
+    
 }
-.footer{
-    line-height: 2;
+.circle-icon {
+    background: rgba(0, 0, 255, 0.466);
+    padding:40px;
+    width:150px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-/* Image Zoom */
-#logo-link span{
-    display:none;
+.profile-image{
+    width:100%;
 }
-.parent {
-    width: 100%; 
-    height: 700px;
-    overflow: hidden;
+.resume-list{
+    margin-left:5%;
+}
+#about-content p{
+    margin-bottom:30px;
+}
+#resume ul{
+    margin-bottom: 30px;
+}
+#portfolio{
+    background-color: #fff;
+}
+.grapevine-container{
+    width:50%;
+    margin:auto;
+}
+.grapevine-container h2{
+    text-align: center;
+}
+#grapevine-img{
+    opacity: .8;
+    width:100%;
+}
+#grapevine-img:hover{
+    opacity: 1;
+}
+@media screen and (max-width: 1000px){
+    .column-weather{
+        display:none;
+    }
   }
-.child {
-    width: 100%;
-    height: 100%;
-    background-color: black; /* fallback color */
-    background-image: url("images/profile.jpg");
-    background-position: center;
-    background-size: cover;
-    transition: all .5s;
-}
-.parent:hover .child,
-.parent:focus .child {
-  transform: scale(1.1);
-}
-.child::before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-.parent:hover .child:before,
-.parent:focus .child:before{
-display: block;
-background-color:gray;
-opacity:.5;
-}
-.parent:hover span,
-.parent:focus span {
-  display: block;
-}
 
