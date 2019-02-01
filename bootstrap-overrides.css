@@ -1,0 +1,11 @@
+.bg-dark{
+    background-color: #0277bd !important;
+    color: #fff;
+}
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+}
+.container h1{
+    text-align:center;
+}
