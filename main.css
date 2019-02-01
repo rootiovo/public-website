@@ -11,7 +11,7 @@ body{
 footer{
     background-color:#0277bd;
     color: #fff;
-    height: 200px;
+    height: 285px;
     opacity: .9;
 }
 a{
@@ -24,11 +24,8 @@ figure{
     display:none;
 }
 .profile-image{
-    width:100%;
-}
-.profile-image{
     width: 100%;
-    opacity: 0.85;
+    opacity: 0.8;
 }
 .container{
     width:100%;
@@ -47,14 +44,6 @@ figure{
 .grey-bg{
     background-color: whitesmoke;
 }
-/* .container img{
-    flex-direction: column;
-}
-.container h1{
-    text-align: center;
-    flex-direction: column;
-    margin-bottom:45px;
-} */
 .avatar{
     display: block;
     margin-left: auto;
@@ -72,16 +61,11 @@ figure{
     margin-left: auto;
     margin-right: auto;
 }
-#about{
-    background-color: whitesmoke;
-}
 .stack img{
-    flex: 1; 
-    margin-right:30px;
-    margin-bottom:50px;
     opacity: 0.7;
-    width:300px;
-    vertical-align: middle;
+    width:100%;
+    padding: 10%;
+    vertical-align: middle !important;
 }
 .stack img:hover{
     opacity: 1;
@@ -95,6 +79,9 @@ figure{
 }
 .grapevine-container h2{
     text-align: center;
+}
+#about{
+    background-color: whitesmoke;
 }
 #resume{
     background-color: #fff !important;
@@ -124,16 +111,29 @@ figure{
     line-height:2;
 }
 .footer-contact{
-    float:left;
-    margin: 15px 20px;
+    margin: 30px;
 }
 .footer-contact h4{
     text-align:center;
 }
+.footer-contact a{
+    cursor: pointer;
+}
+.icon-credit{
+    margin-top: 37%;
+    font-size: .7rem;
+    color: whitesmoke;
+    text-align: center;
+}
+.icon-credit a{
+    text-decoration: underline;
+    color: whitesmoke;
+    cursor: pointer;
+}
 .social-links{
     float: right;
-    line-height:10;
-    font-size: 2rem;
+    line-height:12;
+    font-size: 2.5rem;
     margin-right:20px;
     height:0px;
 }
@@ -144,6 +144,7 @@ figure{
 .social-links a{
     color: #fff;
     text-decoration:none;
+    cursor: pointer;
 }
 .social-links a:hover{
     color: lightgrey;
@@ -160,16 +161,9 @@ figure{
     text-decoration: underline;
     color: whitesmoke;
 }
-#showedClickable{
-    display:none;
-}
-#showedClickable ul{
-    margin:auto;
-    list-style-type: none;
-}
 @media screen and (max-width: 800px){
 footer {
-    height:318px;
+    height:525px;
 }
 .social-links{
     line-height: 3;
@@ -183,17 +177,12 @@ footer {
     width: 100%;
     margin: auto;
 }
-/* .navbar ul{
-    display: none;
-} */
 .stack-img{
-    margin-left:10%;
+    /* margin-left:10%; */
     width:100%;
-    margin-bottom:50px;
+    /* margin-bottom:50px; */
 }
-/* .navbar ul{
-    display: none;
-} */
+
 .grapevine-container {
     width: 100%;
     margin: auto;
@@ -210,31 +199,5 @@ footer {
 .mobile-menu-button a{
     text-decoration: none;
     color:#fff;
-}
-#showedClickable{
-    display:none;
-    font-size:1.5rem;
-    width:100%;
-    text-align:center;
-    padding-top: 68px;
-    position:relative;
-}
-#showedClickable ul {
-    flex:1;
-    /* padding:10px; */
-    margin-top:0px;
-    background-color:rgba(211, 211, 211, 0.445);
-    /* border:1px solid gray; */
-    border-bottom:1px solid lightgray;
-}
-#showedClickable ul li{
-    padding:10px;
-    background-color:rgba(211, 211, 211, 0.445);
-    /* border:1px solid gray; */
-    border-bottom:1px solid lightgray;
-}
-#showedClickable ul li a{
-    text-decoration:none;
-    color:rgb(124, 124, 124);
 }
 }

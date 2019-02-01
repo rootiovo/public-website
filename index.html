@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    
+
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="bootstrap-overrides.css">
     <!-- JavaScript -->
@@ -26,7 +26,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Stephen Jacobs</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
     </header>
     <main>
         <figure>
-            <img src="images/profile.jpg" alt="profile image" class="profile-image">
+            <img src="images/profile.png" alt="profile image" class="profile-image">
         </figure>
 
         <section id="about">
@@ -145,10 +145,20 @@
                 </div>
                 <h1>Technology</h1>
                 <div class="stack">
-                    <img src="images/react.png" alt="react" />
-                    <img src="images/node.png" alt="node" />
-                    <img src="images/javascript.png" alt="javascript" />
-                    <img src="images/html5-css3.png" alt="html5 and css3" />
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="images/react.png" alt="react" />
+                        </div>
+                        <div class="col-md-3">
+                            <img src="images/node.png" alt="node" />
+                        </div>
+                        <div class="col-md-3">
+                            <img src="images/javascript.png" alt="javascript" />
+                        </div>
+                        <div class="col-md-3">
+                            <img src="images/html5-css3.png" alt="html5 and css3" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -177,22 +187,36 @@
 
     <footer>
         <div class="footer">
-            <section id="contact-info">
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p class="contact-links"><strong>Phone:&nbsp;</strong>(818) 538-6420</p>
-                    <p class="contact-links"><strong>Email:&nbsp;</strong><a href="mailto:stephenjay1187@gmail.com">stephenjay1187@gmail.com</a></p>
-                    <p class="contact-links"><strong>Twitter:&nbsp;</strong><a href="">@stephja</a></p>
+            <div class="row">
+                <div class="col-md-3">
+                    <section id="contact-info">
+                        <div class="footer-contact">
+                            <h4>Contact</h4>
+                            <p class="contact-links"><strong>Phone:&nbsp;</strong>(818) 538-6420</p>
+                            <p class="contact-links"><strong>Email:&nbsp;</strong><a href="mailto:stephenjay1187@gmail.com">stephenjay1187@gmail.com</a></p>
+                            <p class="contact-links"><strong>Twitter:&nbsp;</strong><a href="">@stephja</a></p>
+                        </div>
+                    </section>
                 </div>
-            </section>
+                <div class="col-md-6">
+                    <section>
+                        <div class="icon-credit">
+                            <span>Icons made by monkik, smalllikeart, itim2101 and Freepik from <a href="https://www.flaticon.com">www.flaticon.com</a></span>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-3">
+                    <section id="social-links">
+                        <div class="social-links">
+                            <a href="https://github.com/stephja" title="github"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/stephen-jacobs-215284bb/" title="linkedin"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.twitter.com/stephja87" title="twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
 
-            <section id="social-links">
-                <div class="social-links">
-                    <a href="https://github.com/stephja" title="github"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/stephen-jacobs-215284bb/" title="linkedin"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.twitter.com/stephja87" title="twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-            </section>
+
         </div>
     </footer>
 </body>
