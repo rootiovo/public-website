@@ -52,10 +52,13 @@
         </nav>
     </header>
     <main>
-        <figure>
-            <img src="images/profile.jpg" alt="profile image" class="profile-image">
-        </figure>
-
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>Hi, I am Stephen Jacobs</h1>
+              <p>And I'm a Web Developer</p>
+              <a class="btn btn-md btn-primary" href="#contact" role="button">Contact me</a>
+            </div>
+          </div>
         <section id="about">
             <div class="container grey-bg">
                 <div class="circle-icon">
@@ -65,22 +68,15 @@
                 </div>
                 <h1>About</h1>
                 <section id="about-content">
-                    <p>Hi my name is Stephen Jacobs, I am a software engineer/web developer. I have over six years of
-                        industry experience as a software engineer and web developer. My skills range from front-end
-                        JavaScript, such as React and Angular, to the backend with REST APIs and SQL database
-                        management. I
+                    <p>Hi, my name is Stephen Jacobs and I am a full-stack software developer with over eight years of
+                        industry experience. My skills include HTML, CSS,
+                        JavaScript, front-end frameworks such as React and Angular, C#, .NET Core/Framework as well as SQL and NoSQL database management. I
                         have experience with a variety of programming languages, development tools and agile
-                        development. I
-                        am passionate about programming and emerging web technologies, and am always trying to develop
+                        methodoligies. I
+                        am passionate about software development and emerging technologies, and constantly trying to improve and learn new
                         skills relevant to the industy.</p>
-                    <p>I currently reside in Los Angeles, California with my wife and daughter. Outside of programming
-                        I
-                        mostly like to spend time with my family. I enjoy hiking the many trails we have here in Los
-                        Angeles, as well as spending time at the beach. I have a passion for basketball and play
-                        pick-up
-                        games at the park or rec-center. Cooking, reading and watching a good movie round out my
-                        hobbies. I
-                        have also taken up meditation and yoga as a means to relax, uwind and calm the mind.</p>
+                    <p>I currently reside in Los Angeles, California with my wife and daughter. I enjoy hiking the many trails we have here in Los
+                        Angeles, as well as spending time at local beaches.</p>
                 </section>
             </div>
         </section>
@@ -170,11 +166,7 @@
                 </div>
                 <h1>Portfolio</h1>
                 <div class="grapevine-container">
-                    <a href="https://grapevine-news.herokuapp.com"><img src="images/grapevine.jpg" alt="Grapevine News"
-                            id="grapevine-img"></a>
-                </div>
-                <div class="grapevine-container">
-                    <h2>Grapevine News</h2>
+                    <h2><a href="https://grapevine-news.herokuapp.com">Grapevine News</a></h2>
                     <p>A news feed application leveraging React, node.js and express. I used the News API and
                         Dark Sky API for news and weather data. I chose to use
                         Material-UI, a React component library inspired by Google's Material Design, for the user interface.</p>
@@ -186,7 +178,7 @@
     <section id="footer">
             <div class="container">
                 <div class="row text-center text-xs-center text-sm-left text-md-left">
-                    <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div id="contact" class="col-xs-12 col-sm-4 col-md-4">
                         <h5>Contact</h5>
                         <p class="contact-links"><strong>Phone:&nbsp;</strong>(818) 538-6420</p>
                             <p class="contact-links"><strong>Email:&nbsp;</strong><a href="mailto:stephenjay1187@gmail.com">stephenjay1187@gmail.com</a></p>
@@ -213,5 +205,4 @@
             <button id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fas fa-chevron-up"></i></button>        	    
         </section>               
 </body>
-
 </html>
