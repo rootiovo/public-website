@@ -12,8 +12,7 @@ html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/pexels-negative-space-169573.jpg");
+  background-image: linear-gradient(rgb(0 0 0 / 52%), rgb(0 0 0 / 66%)), url(images/pexels-negative-space-169573.jpg);
 
   /* Set a specific height */
   height: 50%;
@@ -283,4 +282,34 @@ section .section-title {
     text-decoration: none;
     color: #fff;
   }
+}
+
+.hero-animated-text {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+  margin-bottom: 30px;
+}
+
+/* Animation */
+.hero-animated-text {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 775px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255, 255, 255, 0.75);}
+  to{border-right-color: transparent;}
 }
