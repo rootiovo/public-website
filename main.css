@@ -46,9 +46,6 @@ footer {
   height: 285px;
   opacity: 0.9;
 }
-a {
-  cursor: default;
-}
 figure {
   margin: 0;
 }
@@ -123,7 +120,7 @@ figure {
 #resume {
   background-color: #fff !important;
 }
-#technology {
+#skills {
   background-color: whitesmoke;
 }
 #about-content p {
