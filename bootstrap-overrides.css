@@ -3,7 +3,7 @@
   color: #fff;
 }
 .navbar-brand {
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
   font-size: 1.8rem;
 }
 .container h1,
@@ -11,4 +11,7 @@ h2 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.btn.btn-primary {
+  background-color: none !important;
 }
